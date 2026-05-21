@@ -1,0 +1,19 @@
+# Config for API-GATEWAY (fetched from Config Server)
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: member-service
+          uri: lb://MEMBER-SERVICE
+          predicates:
+            - Path=/members/**
+
+        - id: book-service
+          uri: lb://BOOK-SERVICE
+          predicates:
+            - Path=/books/**
+
+        - id: borrowing-service
+          uri: lb://BORROWING-SERVICE
+          predicates:
+            - Path=/borrowings/**

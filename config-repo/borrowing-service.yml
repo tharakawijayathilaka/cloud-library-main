@@ -1,0 +1,5 @@
+# Config for BORROWING-SERVICE (fetched from Config Server)
+spring:
+  data:
+    mongodb:
+      uri: ${BORROWING_MONGO_URI:mongodb://localhost:27017/cloud_library_borrowings}

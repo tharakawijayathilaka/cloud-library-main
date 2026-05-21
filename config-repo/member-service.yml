@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cloud_library
+    username: postgres
+    password: postgres123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false

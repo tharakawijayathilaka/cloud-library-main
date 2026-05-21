@@ -1,0 +1,13 @@
+# Config for BOOK-SERVICE (fetched from Config Server)
+spring:
+  data:
+    mongodb:
+      uri: ${BOOK_MONGO_URI:mongodb://localhost:27017/cloud_library_books}
+
+storage:
+  provider: ${STORAGE_PROVIDER:local}
+
+gcs:
+  project-id: ${GCS_PROJECT_ID:}
+  bucket-name: ${GCS_BUCKET:}
+  credentials-path: ${GCS_CREDENTIALS_PATH:}
